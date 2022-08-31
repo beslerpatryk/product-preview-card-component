@@ -1,6 +1,7 @@
 :root {
     /* Primary */
     --dark-cyan: hsl(158, 36%, 37%);
+    --hover-cyan: hsl(156, 42%, 18%);
     --cream: hsl(30, 38%, 92%);
 
     /* Neutral */
@@ -100,4 +101,10 @@ p {
     border-radius: 0.5rem;
     border: none;
     color: #fff;
+}
+
+.cta:hover{
+    cursor:pointer;
+    background-color: var(--hover-cyan);
+    border: none;
 }
