@@ -124,11 +124,13 @@ p {
     border: none;
 }
 
+
 .attribution {
     display: initial;
     position: fixed;
     bottom: 1rem;
-    right: 1rem;
+    right: 0.2rem;
+    padding: 0 1rem;
     color: black;
     font-size: 0.6875rem;
     text-align: center;
@@ -139,6 +141,11 @@ p {
     margin-right: 0.5rem;
     color: var(--dark-cyan);
     text-decoration: none;
+}
+
+.attribution a:hover {
+    cursor: pointer;
+    color:var(--hover-cyan);
 }
 
 @media (min-width: 900px) {
@@ -172,4 +179,11 @@ p {
         justify-content: space-between;
     }
     
+}
+
+@media (max-height:700px){
+    .attribution {
+        position: static;
+        margin: 1rem;
+    }
 }
